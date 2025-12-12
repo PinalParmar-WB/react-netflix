@@ -5,6 +5,13 @@ export const API_OPTIONS = {
   method: 'GET',
   headers: {
     accept: 'application/json',
-    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYWI3NGQzNjU4MjJkMmJiMDgxYzNlNzEzMGZlOGFhYyIsIm5iZiI6MTc2NTQ0ODYzMS4xODcsInN1YiI6IjY5M2E5YmI3YWM0M2UwNWJhZTFkMjljMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.T4UtiM56ILERLGyyOzdG0iXj8P6CNFcYIbhjFyYXjKo'
+    Authorization: 'Bearer ' + process.env.REACT_APP_TMDB_KEY
   }
 };
+export const POSTER_IMG_URL = "https://image.tmdb.org/t/p/w500/";
+export const PREFERRED_LANGUAGES = [
+  {identifier : "en", name : "English"},
+  {identifier : "guj", name : "Gujarati"},
+  {identifier : "hin", name : "Hindi"},
+  {identifier : "tam", name : "Tamil"}
+]

@@ -179,12 +179,12 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
+        <img className='h-screen object-cover'
           src={BACKGROUD_IMAGE}
           alt="bgImage"
         />
       </div>
-      <div className="absolute w-3/12 p-10 bg-black mt-52 mx-auto right-0 left-0 text-white bg-opacity-70 rounded-xl">
+      <div className="absolute w-full md:w-3/12 p-10 bg-black mt-52 md:mx-auto right-0 left-0 text-white bg-opacity-70 rounded-xl">
         <form onSubmit={(e) => handleSubmit(e)}>
           <h1 className="font-bold text-3xl pb-10">
             {isSignInForm ? 'Sign In' : 'Sign Up'}
