@@ -7,7 +7,7 @@ const GPTSearchPage = () => {
   return (
     <div>
       <div className="fixed -z-10 opacity-90">
-        <img className='h-screen object-cover' src={BACKGROUD_IMAGE} alt="bgImage" />
+        <img className='h-screen object-cover w-screen' src={BACKGROUD_IMAGE} alt="bgImage" />
       </div>
       <div>
         <GPTSearchBar/>
